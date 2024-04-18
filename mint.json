@@ -6,24 +6,25 @@
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
+  "backgroundImage": "https://mintlify.s3-us-west-1.amazonaws.com/radiant/background.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#00A7F9",
+    "light": "#32CCFF",
+    "dark": "#00A7F9",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#00A7F9",
+      "to": "#32CCFF"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "support@7opteam.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Ouvrir un ticket",
+    "url": "https://7opteam.atlassian.net/jira/your-work"
   },
   "tabs": [
     {
