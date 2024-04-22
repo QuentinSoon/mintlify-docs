@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "https://creativ-pp-admin.7opteam.com/mona-api"
+      "url": "https://voltalis-preprod-admin.7opteam.com/mona-api/api"
     }
   ],
   "security": [
@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/token": {
+    "/info": {
       "post": {
         "description": "Creates a new plant in the store",
         "requestBody": {
@@ -27,7 +27,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": ["name"],
+                "required": [],
                 "type": "object",
                 "properties": {
                   "grant_type": {
@@ -46,7 +46,7 @@
               }
             }
           },
-          "required": true
+          "required": false
         },
         "responses": {
           "200": {
@@ -119,12 +119,6 @@
             "type": "string"
           }
         }
-      }
-    },
-    "securitySchemes": {
-      "bearerAuth": {
-        "type": "http",
-        "scheme": "bearer"
       }
     }
   }
