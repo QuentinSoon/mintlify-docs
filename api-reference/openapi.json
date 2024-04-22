@@ -13,11 +13,6 @@
       "url": "https://voltalis-preprod-admin.7opteam.com/mona-api/api"
     }
   ],
-  "security": [
-    {
-      "bearerAuth": []
-    }
-  ],
   "paths": {
     "/info": {
       "post": {
