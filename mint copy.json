@@ -19,7 +19,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@7opteam.com"
+      "url": "support@7opteam.com"
     }
   ],
   "topbarCtaButton": {
@@ -36,18 +36,28 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://7opteam.mintlify.app/introduction"
+      "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Site web",
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
       "icon": "newspaper",
-      "url": "https://www.7opteam.com/"
+      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
     {
+      "group": "Get Started",
+      "pages": ["introduction", "quickstart", "development"]
+    },
+    {
       "group": "Les essentiels",
       "pages": [
+        "introduction",
         {
           "group": "Pour commencer",
           "pages": ["essentials/start/connexion", "essentials/start/dataset"]
@@ -68,6 +78,10 @@
           ]
         }
       ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": ["api-reference/introduction"]
     },
     {
       "group": "Endpoint token",
