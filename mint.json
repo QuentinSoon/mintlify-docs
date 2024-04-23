@@ -71,7 +71,7 @@
     },
     {
       "group": "Endpoint token",
-      "pages": ["api-reference/user/getUserToken"]
+      "pages": ["api-reference/info"]
     }
   ],
   "footerSocials": {
