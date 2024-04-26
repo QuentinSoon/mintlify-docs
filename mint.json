@@ -2,11 +2,11 @@
 	"$schema": "https://mintlify.com/schema.json",
 	"name": "Starter Kit",
 	"logo": {
-		"dark": "/logo/7opteam.png",
-		"light": "/logo/7opteam.png"
+		"dark": "/public/assets/7opteam.png",
+		"light": "/public/assets/7opteam.png"
 	},
-	"favicon": "/favicon.svg",
-	"backgroundImage": "https://mintlify.s3-us-west-1.amazonaws.com/radiant/background.png",
+	"favicon": "/public/assets/favicon.svg",
+	"backgroundImage": "/public/assets/background.png",
 	"colors": {
 		"primary": "#00A7F9",
 		"light": "#32CCFF",
@@ -18,18 +18,18 @@
 	},
 	"topbarLinks": [
 		{
-			"name": "Support",
-			"url": "mailto:hi@mintlify.com"
+			"name": "Nous contacter",
+			"url": "mailto:support@7opteam.com"
 		}
 	],
 	"topbarCtaButton": {
-		"name": "Dashboard",
+		"name": "Ouvrir un ticket",
 		"url": "https://dashboard.mintlify.com"
 	},
 	"tabs": [
 		{
 			"name": "API Reference",
-			"url": "api-reference"
+			"url": "app/api-reference"
 		}
 	],
 	"anchors": [
@@ -52,29 +52,29 @@
 	"navigation": [
 		{
 			"group": "Get Started",
-			"pages": ["introduction", "quickstart", "development"]
+			"pages": ["app/introduction", "app/quickstart", "app/development"]
 		},
 		{
 			"group": "Essentials",
 			"pages": [
-				"essentials/markdown",
-				"essentials/code",
-				"essentials/images",
-				"essentials/settings",
-				"essentials/navigation",
-				"essentials/reusable-snippets"
+				"app/essentials/markdown",
+				"app/essentials/code",
+				"app/essentials/images",
+				"app/essentials/settings",
+				"app/essentials/navigation",
+				"app/essentials/reusable-snippets"
 			]
 		},
 		{
 			"group": "API Documentation",
-			"pages": ["api-reference/introduction"]
+			"pages": ["app/api-reference/introduction"]
 		},
 		{
 			"group": "Endpoint Examples",
 			"pages": [
-				"api-reference/endpoint/get",
-				"api-reference/endpoint/create",
-				"api-reference/endpoint/delete"
+				"app/api-reference/endpoint/get",
+				"app/api-reference/endpoint/create",
+				"app/api-reference/endpoint/delete"
 			]
 		}
 	],
