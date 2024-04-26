@@ -10,8 +10,12 @@
 	},
 	"servers": [
 		{
-			"url": "https://voltalis-preprod-admin.7opteam.com/mona-api/api",
-			"description": "Local server"
+			"url": "https://opteam5-admin.7opteam.com/mona-api",
+			"description": "The ee API server"
+		},
+		{
+			"url": "https://planista-preprod-admin.7opteam.com/mona-api",
+			"description": "The production API server"
 		}
 	],
 	"paths": {
@@ -125,19 +129,9 @@
 				}
 			}
 		},
-		"/info": {
+		"/api/info": {
 			"get": {
 				"description": "Returns info from the system that the user has access to",
-				"parameters": [
-					{
-						"name": "Base URL",
-						"in": "path",
-						"description": "The maximum number of results to return",
-						"schema": {
-							"type": "string"
-						}
-					}
-				],
 				"responses": {
 					"200": {
 						"description": "Plant response",
@@ -164,6 +158,83 @@
 							"application/json": {
 								"schema": {
 									"$ref": "#/components/schemas/Error"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/rm-connector/activity/configuration": {
+			"get": {
+				"description": "Returns info from the system that the user has access to",
+				"security": [
+					{
+						"bearerAuth": []
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Plant response",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"name": {
+											"description": "couc",
+											"type": "string"
+										},
+										"endpoint": {
+											"description": "Tag to specify the type",
+											"type": "string"
+										},
+										"title": {
+											"description": "Tag to specify the type",
+											"type": "string"
+										},
+										"list_title": {
+											"description": "Tag to specify the type",
+											"type": "string"
+										},
+										"description": {
+											"description": "Tag to specify the type",
+											"type": "string"
+										},
+										"columns": {
+											"description": "Tag to specify the type",
+											"type": "array"
+										}
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Unexpected error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"error": {
+											"description": "error",
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Unexpected error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"Message": {
+											"description": "error",
+											"type": "string"
+										}
+									}
 								}
 							}
 						}

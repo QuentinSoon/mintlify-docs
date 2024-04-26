@@ -84,7 +84,10 @@
 		},
 		{
 			"group": "Activités",
-			"pages": ["app/api-reference/activity/get"]
+			"pages": [
+				"app/api-reference/activity/getinfo",
+				"app/api-reference/activity/getactivityconfiguration"
+			]
 		}
 	],
 	"footerSocials": {
