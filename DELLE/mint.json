@@ -1,0 +1,82 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Starter Kit",
+  "logo": {
+    "dark": "/logo/7opteam.png",
+    "light": "/logo/7opteam.png"
+  },
+  "favicon": "/favicon.svg",
+  "backgroundImage": "https://mintlify.s3-us-west-1.amazonaws.com/radiant/background.png",
+  "colors": {
+    "primary": "#00A7F9",
+    "light": "#32CCFF",
+    "dark": "#00A7F9",
+    "anchors": {
+      "from": "#00A7F9",
+      "to": "#32CCFF"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@7opteam.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Ouvrir un ticket",
+    "url": "https://7opteam.atlassian.net/jira/your-work"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://7opteam.mintlify.app/introduction"
+    },
+    {
+      "name": "Site web",
+      "icon": "newspaper",
+      "url": "https://www.7opteam.com/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Les essentiels",
+      "pages": [
+        {
+          "group": "Pour commencer",
+          "pages": ["essentials/start/connexion", "essentials/start/dataset"]
+        }
+      ]
+    },
+    {
+      "group": "Calendar",
+      "pages": [
+        {
+          "group": "Generalites sur l'UI",
+          "pages": [
+            "essentials/calendar/onglet",
+            "essentials/calendar/ressources",
+            "essentials/calendar/activity",
+            "essentials/calendar/calendar",
+            "essentials/calendar/map"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Endpoint token",
+      "pages": ["api-reference/info"]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://google.fr",
+    "github": "https://google.fr",
+    "linkedin": "https://google.fr"
+  }
+}

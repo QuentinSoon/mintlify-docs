@@ -2,29 +2,28 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/7opteam.png",
-    "light": "/logo/7opteam.png"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
-  "backgroundImage": "https://mintlify.s3-us-west-1.amazonaws.com/radiant/background.png",
   "colors": {
-    "primary": "#00A7F9",
-    "light": "#32CCFF",
-    "dark": "#00A7F9",
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373",
     "anchors": {
-      "from": "#00A7F9",
-      "to": "#32CCFF"
+      "from": "#0D9373",
+      "to": "#07C983"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@7opteam.com"
+      "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Ouvrir un ticket",
-    "url": "https://7opteam.atlassian.net/jira/your-work"
+    "name": "Dashboard",
+    "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
     {
@@ -36,47 +35,57 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://7opteam.mintlify.app/introduction"
+      "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Site web",
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
       "icon": "newspaper",
-      "url": "https://www.7opteam.com/"
+      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Les essentiels",
+      "group": "Get Started",
       "pages": [
-        {
-          "group": "Pour commencer",
-          "pages": ["essentials/start/connexion", "essentials/start/dataset"]
-        }
+        "introduction",
+        "quickstart",
+        "development"
       ]
     },
     {
-      "group": "Calendar",
+      "group": "Essentials",
       "pages": [
-        {
-          "group": "Generalites sur l'UI",
-          "pages": [
-            "essentials/calendar/onglet",
-            "essentials/calendar/ressources",
-            "essentials/calendar/activity",
-            "essentials/calendar/calendar",
-            "essentials/calendar/map"
-          ]
-        }
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/reusable-snippets"
       ]
     },
     {
-      "group": "Endpoint token",
-      "pages": ["api-reference/info"]
+      "group": "API Documentation",
+      "pages": [
+        "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
+      ]
     }
   ],
   "footerSocials": {
-    "x": "https://google.fr",
-    "github": "https://google.fr",
-    "linkedin": "https://google.fr"
+    "x": "https://x.com/mintlify",
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
 }

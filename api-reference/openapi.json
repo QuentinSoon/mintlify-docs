@@ -10,11 +10,55 @@
   },
   "servers": [
     {
-      "url": "https://voltalis-preprod-admin.7opteam.com/mona-api/api"
+      "url": "http://sandbox.mintlify.com"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
     }
   ],
   "paths": {
-    "/info": {
+    "/plants": {
+      "get": {
+        "description": "Returns all plants from the system that the user has access to",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "The maximum number of results to return",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plant response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Plant"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
       "post": {
         "description": "Creates a new plant in the store",
         "requestBody": {
@@ -22,26 +66,11 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [],
-                "type": "object",
-                "properties": {
-                  "grant_type": {
-                    "description": "The name of the plant",
-                    "type": "string"
-                  },
-                  "username": {
-                    "description": "Tag to specify the type",
-                    "type": "string"
-                  },
-                  "password": {
-                    "description": "Tag to specify the type",
-                    "type": "string"
-                  }
-                }
+                "$ref": "#/components/schemas/NewPlant"
               }
             }
           },
-          "required": false
+          "required": true
         },
         "responses": {
           "200": {
@@ -66,12 +95,47 @@
           }
         }
       }
+    },
+    "/plants/{id}": {
+      "delete": {
+        "description": "Deletes a single plant based on the ID supplied",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of plant to delete",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Plant deleted",
+            "content": {}
+          },
+          "400": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
       "Plant": {
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
@@ -90,7 +154,9 @@
             "$ref": "#/components/schemas/Plant"
           },
           {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "type": "object",
             "properties": {
               "id": {
@@ -103,7 +169,10 @@
         ]
       },
       "Error": {
-        "required": ["error", "message"],
+        "required": [
+          "error",
+          "message"
+        ],
         "type": "object",
         "properties": {
           "error": {
@@ -114,6 +183,12 @@
             "type": "string"
           }
         }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
       }
     }
   }
