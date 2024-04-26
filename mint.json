@@ -47,6 +47,11 @@
 			"name": "Blog",
 			"icon": "newspaper",
 			"url": "https://mintlify.com/blog"
+		},
+		{
+			"name": "Site officiel",
+			"icon": "earth-europe",
+			"url": "https://www.7opteam.com/"
 		}
 	],
 	"navigation": [
@@ -76,6 +81,10 @@
 				"app/api-reference/endpoint/create",
 				"app/api-reference/endpoint/delete"
 			]
+		},
+		{
+			"group": "Activités",
+			"pages": ["app/api-reference/activity/get"]
 		}
 	],
 	"footerSocials": {
