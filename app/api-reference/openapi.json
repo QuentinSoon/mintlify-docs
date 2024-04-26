@@ -10,12 +10,12 @@
 	},
 	"servers": [
 		{
-			"url": "https://opteam5-admin.7opteam.com/mona-api",
-			"description": "The ee API server"
+			"url": "https://opteam-5-admin.7opteam.com/mona-api",
+			"description": "Serveur 7Opteam"
 		},
 		{
 			"url": "https://planista-preprod-admin.7opteam.com/mona-api",
-			"description": "The production API server"
+			"description": "Serveur Planista"
 		}
 	],
 	"paths": {
