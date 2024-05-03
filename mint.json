@@ -1,98 +1,99 @@
 {
-	"$schema": "https://mintlify.com/schema.json",
-	"name": "Starter Kit",
-	"logo": {
-		"dark": "/public/assets/7opteam.png",
-		"light": "/public/assets/7opteam.png"
-	},
-	"favicon": "/public/assets/favicon.svg",
-	"backgroundImage": "/public/assets/background.png",
-	"colors": {
-		"primary": "#00A7F9",
-		"light": "#32CCFF",
-		"dark": "#00A7F9",
-		"anchors": {
-			"from": "#00A7F9",
-			"to": "#32CCFF"
-		}
-	},
-	"topbarLinks": [
-		{
-			"name": "Nous contacter",
-			"url": "mailto:support@7opteam.com"
-		}
-	],
-	"topbarCtaButton": {
-		"name": "Ouvrir un ticket",
-		"url": "https://dashboard.mintlify.com"
-	},
-	"tabs": [
-		{
-			"name": "API Reference",
-			"url": "app/api-reference"
-		}
-	],
-	"anchors": [
-		{
-			"name": "Documentation",
-			"icon": "book-open-cover",
-			"url": "https://mintlify.com/docs"
-		},
-		{
-			"name": "Community",
-			"icon": "slack",
-			"url": "https://mintlify.com/community"
-		},
-		{
-			"name": "Blog",
-			"icon": "newspaper",
-			"url": "https://mintlify.com/blog"
-		},
-		{
-			"name": "Site officiel",
-			"icon": "earth-europe",
-			"url": "https://www.7opteam.com/"
-		}
-	],
-	"navigation": [
-		{
-			"group": "Get Started",
-			"pages": ["app/introduction", "app/quickstart", "app/development"]
-		},
-		{
-			"group": "Essentials",
-			"pages": [
-				"app/essentials/markdown",
-				"app/essentials/code",
-				"app/essentials/images",
-				"app/essentials/settings",
-				"app/essentials/navigation",
-				"app/essentials/reusable-snippets"
-			]
-		},
-		{
-			"group": "API Documentation",
-			"pages": ["app/api-reference/introduction"]
-		},
-		{
-			"group": "Endpoint Examples",
-			"pages": [
-				"app/api-reference/endpoint/get",
-				"app/api-reference/endpoint/create",
-				"app/api-reference/endpoint/delete"
-			]
-		},
-		{
-			"group": "Activités",
-			"pages": [
-				"app/api-reference/activity/getinfo",
-				"app/api-reference/activity/getactivityconfiguration"
-			]
-		}
-	],
-	"footerSocials": {
-		"x": "https://x.com/mintlify",
-		"github": "https://github.com/mintlify",
-		"linkedin": "https://www.linkedin.com/company/mintsearch"
-	}
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Starter Kit",
+  "logo": {
+    "dark": "/public/assets/7opteam.png",
+    "light": "/public/assets/7opteam.png"
+  },
+  "favicon": "/public/assets/favicon.svg",
+  "backgroundImage": "/public/assets/background.png",
+  "colors": {
+    "primary": "#00A7F9",
+    "light": "#32CCFF",
+    "dark": "#00A7F9",
+    "anchors": {
+      "from": "#00A7F9",
+      "to": "#32CCFF"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Nous contacter",
+      "url": "mailto:support@7opteam.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Ouvrir un ticket",
+    "url": "https://dashboard.mintlify.com"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "app/api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://mintlify.com/docs"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
+    },
+    {
+      "name": "Site officiel",
+      "icon": "earth-europe",
+      "url": "https://www.7opteam.com/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": ["app/introduction", "app/quickstart", "app/development"]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "app/essentials/markdown",
+        "app/essentials/code",
+        "app/essentials/images",
+        "app/essentials/settings",
+        "app/essentials/navigation",
+        "app/essentials/reusable-snippets",
+        "app/essentials/connexion"
+      ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": ["app/api-reference/introduction"]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "app/api-reference/endpoint/get",
+        "app/api-reference/endpoint/create",
+        "app/api-reference/endpoint/delete"
+      ]
+    },
+    {
+      "group": "Activités",
+      "pages": [
+        "app/api-reference/activity/getinfo",
+        "app/api-reference/activity/getactivityconfiguration"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/mintlify",
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://www.linkedin.com/company/mintsearch"
+  }
 }
