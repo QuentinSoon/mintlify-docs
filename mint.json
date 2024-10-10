@@ -28,6 +28,10 @@
   },
   "tabs": [
     {
+      "name": "Documentation Mona",
+      "url": "app/mona"
+    },
+    {
       "name": "API Reference",
       "url": "app/api-reference"
     }
@@ -56,12 +60,16 @@
   ],
   "navigation": [
     {
-      "group": "Documentation Calendar",
-      "pages": ["app/essentials/glossary", "app/essentials/connexion"]
+      "group": "Pour Commencer avec Calendar",
+      "pages": [
+        "app/essentials/glossary",
+        "app/essentials/connexion",
+        "app/essentials/calendar"
+      ]
     },
     {
-      "group": "Documentation Mona Admin",
-      "pages": ["app/essentials/connexion"]
+      "group": "Pour Commencer avec Mona",
+      "pages": ["app/mona/glossaryMona"]
     },
     {
       "group": "API Documentation",
