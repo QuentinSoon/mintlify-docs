@@ -48,9 +48,9 @@
       "url": "https://mintlify.com/community"
     },
     {
-      "name": "Blog",
+      "name": "News 7Opteam",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://www.7opteam.com/news/"
     },
     {
       "name": "Site officiel",
@@ -92,8 +92,6 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/7opteam/"
   }
 }
